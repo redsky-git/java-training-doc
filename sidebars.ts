@@ -174,6 +174,15 @@ const sidebars: SidebarsConfig = {
             'training/start-java/java-programming-execution',
           ],
         },
+        {
+          type: 'category',
+          label: '• 문법',
+          collapsed: false,
+          collapsible: true,
+          items: [
+            'training/grammar/variable',
+          ],
+        },
       ],
     },
   ],

@@ -44,3 +44,28 @@ public class HelloJava { // HelloJava 클래스의 범위 시작
 | JRE    | 실행 환경        | JVM + 표준 라이브러리   |
 | JDK    | 개발 환경        | JRE + 컴파일러(javac) + 개발 도구 |
 :::
+
+
+
+
+
+
+
+## 주석
+---
+```java showLineNumbers
+// HelloJava.java --------------------------
+public class HelloJava { // HelloJava 클래스의 범위 시작
+
+  public static void main(String[] args) { // main() 메서드의 범위 시작
+    System.out.println("hello java!"); // 콘솔에 출력하는 메서드 - 한줄 주석
+
+    /* 여러줄 주석
+    System.out.println("hello java!");
+    System.out.println("hello java!");
+    System.out.println("hello java!");
+    */
+  }
+
+}
+```
