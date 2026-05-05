@@ -21,13 +21,13 @@ title: "페이지 이동하기"
 ---
 * **`$router.push(라우터url, [옵션])`**
   - 페이지 이동 후 **브라우저 히스토리 스택**에 추가됩니다.
-  - [$router.push() API 문서 바로가기]()
+  - $router.push() API 문서 바로가기
 * **`$router.replace(라우터url, [옵션])`**
   - 페이지 이동 후 **브라우저 히스토리 스택**의 이전 페이지를 덮어씌웁니다.
-  - [$router.replace() API 문서 바로가기]()
+  - $router.replace() API 문서 바로가기
 * **`$router.back()`**
   - **브라우저 히스토리 스택**에서 이전 페이지로 이동합니다.
-  - [$router.back() API 문서 바로가기]()
+  - $router.back() API 문서 바로가기
 
 
 
