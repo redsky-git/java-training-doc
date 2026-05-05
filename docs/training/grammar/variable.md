@@ -92,12 +92,14 @@ public class Var3 {
     }
 }
 ```
-:::info 변수의 타입
+:::info[변수의 타입]
+
 * 정수: int, long
 * 실수: float, double
 * 불리언: boolean
 * 문자: char (작은 따옴표로 감싸야 함 ex: 'A')
 * 문자열: String (큰 따옴표로 감싸야 함 ex: "Hello Java!!")
+
 :::
 
 * 다양한 숫자 타입 변수 (기본형)
@@ -130,7 +132,8 @@ public class Var4 {
 | 문자    | char      | 2byte     | 0 ~ 65,535 (유니코드)       | '\u0000'   |
 | 논리    | boolean   | 1byte     | true / false                | false      |
 
-:::tip 변수 타입 정리
+:::tip[변수 타입 정리]
+
 * 실무에서 거의 사용하지 않는 변수
   - byte는 거의 사용하지 않음. 대신 파일을 바이트 단위로 다루기 때문에 파일 전송, 파일 복사 등에 주로 사용됨.
   - int를 많이 사용.
@@ -142,4 +145,30 @@ public class Var4 {
   - 실수: double 사용.
   - 불린: boolean을 사용.
   - 문자열: String 사용.
+
 :::
+
+
+
+
+
+
+
+## 변수 명명 규칙
+---
+* **규칙**은 필수, **관례**는 필수는 아니지만 거의 따름. 사실상 규칙. 
+* **규칙**
+  - 숫자로 시작하지 않음 (예: 1num, 1st)
+  - 이름에 공백이 들어갈 수 없음.
+  - 자바 `예약어`는 변수 이름으로 사용 불가. (예: int, double, boolean, char, String, ...)
+  - 변수 이름에는 영문자(a-z, A-Z), 숫자(0-9), 언더바(_), 달러($)만 사용 가능.
+
+* **관례**
+  - 변수 이름은 소문자로 시작. (예: num, name, age, ...)
+  - 변수 복합 단어는 소문자로 시작. (예: studentName, studentAge, ...) -> 카멜케이스
+  - 상수는 대문자로 시작. (예: MAX_VALUE, MIN_VALUE, ...)
+  - 클래스 이름은 대문자로 시작. (예: Student, Person, ...) -> 파스칼케이스
+  - 인터페이스 이름은 대문자로 시작. (예: MyInterface, MyInterface2, ...)
+  - 추상 클래스 이름은 대문자로 시작. (예: MyAbstractClass, MyAbstractClass2, ...)
+  - 열거 타입 이름은 대문자로 시작. (예: MyEnum, MyEnum2, ...)
+  - 패키지 이름은 모두 소문자로 작성. (예: com.example.myapp, ...)

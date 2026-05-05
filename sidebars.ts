@@ -181,6 +181,7 @@ const sidebars: SidebarsConfig = {
           collapsible: true,
           items: [
             'training/grammar/variable',
+            'training/grammar/operator',
           ],
         },
       ],
