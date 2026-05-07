@@ -163,3 +163,106 @@ public class Operator3 {
     - `b = a++`: `a`를 `b`에 할당한 후 `a`를 1 증가시킨다.
 
 
+
+
+
+
+## 비교 연산자
+---
+* 비교 연산자는 두 값을 비교하는 연산자입니다. 결과는 **boolean** 타입으로 반환된다.
+* 문자열 비교는 `==` 또는 `!=` 연산자를 사용하지 않고, `equals()` 메서드를 사용한다.
+* 비교 연산자는 다음과 같습니다.
+  - 같음(동등성): `==`
+  - 같지 않음(불일치): `!=`
+  - 크다(Greater than): `>`
+  - 작다(Less than): `<`
+  - 크거나 같다(Greater than or equal to): `>=`
+  - 작거나 같다(Less than or equal to): `<=`
+
+
+```java showLineNumbers
+package operator;
+
+public class Operator4 {
+    static void main() {
+        int a = 10;
+        int b = 20;
+
+        System.out.println(a == b); // false
+        System.out.println(a != b); // true
+        System.out.println(a > b); // false
+        System.out.println(a < b); // true
+        System.out.println(a >= b); // false
+        System.out.println(a <= b); // true
+
+        // 결과를 boolean 변수에 저장할 수 있다.
+        boolean result = a == b;
+
+        // 문자열 리터럴 비교
+        boolean result2 = "hello".equals("hello"); // true
+    }
+}
+```
+
+
+
+
+
+## 논리 연산자
+---
+* 논리연산자는 `boolean` 타입인 `true`, `false`를 비교하는데 사용한다.
+* 논리연산자는 다음과 같습니다.
+  - 논리곱(AND): `&&`
+  - 논리합(OR): `||`
+  - 논리부정(NOT): `!`
+
+
+```java showLineNumbers
+package operator;
+
+public class Operator5 {
+    static void main() {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(true && true); // true
+        System.out.println(true && false); // false
+        System.out.println(false && false); // false
+        System.out.println(true || true); // true
+        System.out.println(true || false); // true
+        System.out.println(false || false); // false
+        System.out.println(!true); // false
+        System.out.println(!false); // true
+        // 변수 활용
+        System.out.println(a && b); // false
+        System.out.println(a || b); // true
+    }
+}
+```
+
+
+## 대입 연산자
+---
+* 값을 변수에 할당하는 연산자 `=`
+* 축약(복합) 연산자: `+=`, `-=`, `*=`, `/=`, `%=`
+
+
+```java showLineNumbers
+package operator;
+
+public class Operator6 {
+    static void main() {
+        int a = 10;
+        a += 10; // a = a + 10;
+        System.out.println(a);
+        a -= 10; // a = a - 10;
+        System.out.println(a);
+        a *= 10; // a = a * 10;
+        System.out.println(a);
+        a /= 10; // a = a / 10;
+        System.out.println(a);
+        a %= 10; // a = a % 10;
+        System.out.println(a);
+    }
+}
+```
